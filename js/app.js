@@ -81,7 +81,4 @@ $(function(){
     },
       smoothState = $page.smoothState(options).data('smoothState');
 
-// Slick slider
-    $('.slider').slick();
-
 });

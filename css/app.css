@@ -353,7 +353,7 @@ h1, .title-bar a{
   color: #9f6d5e;
 }
 
-.producto a, .reveal a{
+.producto a, .reveal a, .reveal button.nested-b{
   display: block;
   position: relative;
 }
@@ -398,8 +398,19 @@ h1, .title-bar a{
   margin: 0;
 }
 
-.producto a:hover .p-hover, .reveal a:hover .p-hover{
+.row.reveal.small .row{
+  margin: 3rem 0 0 0;
+}
+
+.producto a:hover .p-hover, .reveal a:hover .p-hover, .reveal button.nested-b:hover .p-hover{
   display: block;
+}
+
+.button.nested-b{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .intro-materiales .columns:last-child img:first-child{
@@ -494,10 +505,16 @@ h1, .title-bar a{
 
 .reveal.row{
   padding: 3.125rem 0;
+  border: none;
 }
 
 .reveal.row .row{
   margin: 2rem 0;
+}
+
+.reveal.small .button.cta{
+  margin: 0;
+  padding: 1.563rem 1.5rem;
 }
 
 .slick-prev, .slick-next{

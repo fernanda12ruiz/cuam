@@ -85,12 +85,14 @@
 
         <div class="row">
           <div class="large-8 columns">
-            <a href="marcos-sencillos.html">
+            <button class="button nested-b" data-open="marcos-modal">
+            <!-- <a href="marcos-sencillos.html"> -->
               <img src="images/marcos.jpg" alt="">
               <div class="p-hover">
                 <p>Marco</p>
               </div>
-            </a>
+            <!-- </a> -->
+            </button>
           </div>
 
           <div class="large-8 columns">
@@ -111,6 +113,32 @@
       </div>
     </div>
 <!-- //End Reveal Modal -->
+
+<!-- This is the nested modal -->
+<div class="row reveal small" id="marcos-modal" data-reveal>
+  <div class="small-14 small-centered columns">
+    <h3 class="text-center">¿Quieres imprimir tu obra con nosotros?</h3>
+    <p class="text-center">Puedes elegir entre imprimir tu obra con nosotros, o enviárnosla en caso de que ya la tengas lista para enmarcar.</p>
+      <div class="row">
+
+          <div class="large-8 columns">
+            <a href="marcos-sencillos.html" class="button cta">
+              Si, Quiero imprimir
+            </a>
+          </div>
+
+        <div class="large-8 columns">
+          <a href="marcos-sencillos.html" class="button cta">
+            No, Quiero enviar mi obra
+          </a>
+        </div>
+
+    </div>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
 
   <div class="row bc bar-padding slide-up-fade-in">
     <nav aria-label="You are here:" role="navigation">
@@ -236,7 +264,12 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/jquery.smoothState.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+    // Slick slider
+        $('.slider').slick();
+    </script>
   </body>
 </html>
